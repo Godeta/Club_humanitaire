@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club humanitaire HEI</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../../index.html">
+                <img src="img/logo.png" width="auto" height="">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Accueil
+                </a>
+
+                <a class="navbar-item" href="activite.html">
+                    Activités
+                </a>
+                
+                <a class="navbar-item" href="mission.html">
+                  Mission humanitaire
+              </a>
+              
+              <a class="navbar-item" href="mission.html">
+                Newsletter
+            </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Cover -->
+    <section class="hero is-galette is-fullheight-with-navbar">
+        <div class="hero-body has-shadow">
+            <div class="container has-text-centered">
+                <p class="title is-white">
+                  Club humanitaire
+                </p>
+                <p class="subtitle is-white">
+                  A votre tour, oeuvrez pour un monde meilleur.
+                </p>
+              </div>
+        </div>
+    </section>
+    <!-- Qui ? -->
+    <section class="section">
+        <h1 class="title">Qui sommes nous ?</h1>
+        <h2 class="subtitle">
+            Nous sommes 4 étudiants motivés pour rendre le monde meilleur.
+        </h2>
+        <img src="img/logo.png"/>
+    </section>
+    <!-- Objectifs-->
+    <section class="section">
+      <h1 class="title">Nos objectifs</h1>
+      <h2 class="subtitle">
+          Tout défoncer
+      </h2>
+  </section>
+
+    <!-- Nous contacter -->
+    <section class="hero is-fullheight-with-navbar">
+    <div class="container has-text-centered">
+      <div class="columns is-8 is-variable ">
+        <div class="column is-two-thirds has-text-left">
+          <h1 class="title is-1">Nous contacter</h1>
+          <p class="is-size-4">N'hésitez pas à donner votre mail pour être mis au parfum dès la sortie de nouvelles actualitées !</p>
+          <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="column is-one-third has-text-left">
+          <div class="field">
+            <label class="label">Nom</label>
+            <div class="control">
+              <input class="input is-medium" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input is-medium" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea is-medium"></textarea>
+            </div>
+          </div>
+          <div class="control">
+            <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Envoyer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            © Ce site est la propriété du <b>club humanitaire</b> de HEI.
+          </p>
+        </div>
+      </footer>
+      
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
+
+</html>
