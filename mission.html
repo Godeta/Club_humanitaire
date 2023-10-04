@@ -116,7 +116,6 @@ input::placeholder {
   color: white !important;
 }
     </style>
-<body>
     <!-- Menu -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -197,8 +196,8 @@ input::placeholder {
               <div class="column is-6 is-offset-6">
                 <h1 class="title is-1 ">Un impact durable</h1>
                 <hr class="content-divider">
-                <h2 class="subtitle"> L'impact de ces initiatives va bien au-delà de l'aide immédiate ; il s'inscrit dans une perspective à long terme visant à renforcer les communautés et à leur donner les moyens de prendre leur destin en main. Que ce soit en fournissant un accès à l'éducation, à l'eau potable, à des soins de santé de qualité, ou en promouvant le développement économique local, ces projets créent des bases solides pour un avenir meilleur. L'impact durable se mesure à travers l'autonomisation des individus et des communautés, leur capacité à devenir plus résilients face aux défis, et leur aptitude à transmettre ces avantages aux générations futures. </h2
-              </div>
+                <h2 class="subtitle"> L'impact de ces initiatives va bien au-delà de l'aide immédiate ; il s'inscrit dans une perspective à long terme visant à renforcer les communautés et à leur donner les moyens de prendre leur destin en main. Que ce soit en fournissant un accès à l'éducation, à l'eau potable, à des soins de santé de qualité, ou en promouvant le développement économique local, ces projets créent des bases solides pour un avenir meilleur. L'impact durable se mesure à travers l'autonomisation des individus et des communautés, leur capacité à devenir plus résilients face aux défis, et leur aptitude à transmettre ces avantages aux générations futures. </h2>
+                </div>
             </div>
           </div>
         </div>
@@ -206,6 +205,7 @@ input::placeholder {
       <section class="cta va" id="infos">
         <div class="container">
           <div class="columns">
+          <form id="contact-form" method="POST" action="sendmail.php">
             <div class="column is-6">
               <h1 class="title is-1 ">Pour plus d'informations</h1>
               <hr class="content-divider">
@@ -215,24 +215,25 @@ input::placeholder {
               <div class="field">
                 <label class="label">Nom</label>
                 <div class="control">
-                  <input class="input is-medium" type="text" placeholder="Gilbert Bécaud">
+                  <input class="input is-medium" type="text" name="name" placeholder="Gilbert Bécaud">
                 </div>
               </div>
               <br>
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control">
-                  <input class="input is-medium" type="email" placeholder="danielbalavoine@gmail.com">
+                  <input class="input is-medium" type="email" name="email" placeholder="danielbalavoine@gmail.com">
                 </div>
               </div>
               <br>
               <div class="field is-grouped">
                 <div class="control">
-                  <button class="button is-white is-rounded is-outlined">Envoyer</button>
+                  <button type="submit" class="button is-white is-rounded is-outlined">Envoyer</button>
                 </div>
   
               </div>
             </div>
+            </form>
           </div>
         </div>
   
@@ -246,7 +247,6 @@ input::placeholder {
         </div>
       </footer>
       
-</body>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -274,5 +274,5 @@ if ($navbarBurgers.length > 0) {
 
 });
 </script>
-
+</body>
 </html>
